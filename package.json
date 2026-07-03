@@ -40,7 +40,7 @@
     "analytics": ">=0.8.0"
   },
   "devDependencies": {
-    "@types/node": "^26.0.1",
+    "@types/node": "^26.1.0",
     "analytics": "^0.8.19",
     "happy-dom": "^20.10.6",
     "tsdown": "^0.22.3",
