@@ -1,0 +1,50 @@
+{
+  "name": "analytics-plugin-etracker",
+  "version": "1.0.0",
+  "description": "etracker plugin for the analytics module",
+  "type": "module",
+  "source": "./src/browser.ts",
+  "types": "./dist/browser.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/browser.d.ts",
+      "browser": "./dist/browser.js",
+      "node": "./dist/node.js",
+      "default": "./dist/browser.js"
+    }
+  },
+  "files": [
+    "src",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "analytics",
+    "analytics-plugin",
+    "etracker"
+  ],
+  "author": "Philipp Daun",
+  "license": "MIT",
+  "homepage": "https://github.com/daun/analytics-plugin-etracker#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daun/analytics-plugin-etracker.git"
+  },
+  "peerDependencies": {
+    "analytics": ">=0.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "analytics": "^0.8.19",
+    "happy-dom": "^20.10.6",
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.9"
+  }
+}
